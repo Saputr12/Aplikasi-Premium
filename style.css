@@ -1,0 +1,131 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+
+
+.background-animation {
+  position: fixed;
+  width: 1000%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff0000, #0000ff);
+  background-size: 500% 500%;
+  animation: gradientMove 5s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  background: linear-gradient(135deg, red, darkred );
+  color: #fff;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+}
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+.navbar .nav-links li {
+  margin-left: 10px;
+}
+.navbar .nav-links a {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.header {
+  text-align: center;
+  padding: 50px 300px;
+  color: white;
+}
+
+.packages {
+  background: rgba(255,255,255,0.9);
+  padding: 60px 20px;
+  text-align: center;
+}
+.packages h2 {
+  margin-bottom: 40px;
+  color: #333;
+}
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.package-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.package-card:hover {
+  transform: translateY(-10px);
+}
+.package-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+.package-card h3 {
+  margin: 10px 0;
+}
+.package-card p {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.payment {
+  background: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
+}
+.payment h2 {
+  margin-bottom: 20px;
+}
+.payment ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.payment ul li {
+  margin: 10px 0;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #b71c1c;
+}
+
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.9rem;
+}
