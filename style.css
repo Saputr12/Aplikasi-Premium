@@ -127,12 +127,13 @@ body {
   margin-top: 20px;
   background: white#020000;
   color: black;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 5px 10px;
+  border-radius: 20px;
   text-decoration: none;
   transition: 0.3s;
   font-weight: 700;
   font-size: 24px;
+  text-align: center;
 }
 
 .footer {
