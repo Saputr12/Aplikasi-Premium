@@ -15,7 +15,7 @@ body {
   height: 100%;
   background: linear-gradient(45deg, #ff0000, #0000ff);
   background-size: 500% 500%;
-  animation: gradientMove 10s ease infinite;
+  animation: gradientMove 5s ease infinite;
   z-index: -1;
 }
 
@@ -120,6 +120,19 @@ body {
 }
 .btn:hover {
   background: #b71c1c;
+}
+
+.btn1 {
+  display: inline-block;
+  margin-top: 20px;
+  background: white#020000;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .footer {
